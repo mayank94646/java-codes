@@ -1,0 +1,36 @@
+import java.util.*;
+class Institute
+{
+    String name;
+    Institute(String name)
+    {
+        this.name = name;
+    }
+    void print()
+    {
+        System.out.println(name);
+    }
+}
+class Chitkara extends Institute
+{
+    int n;
+    Chitkara(String name,int n)
+    {
+        super(name);
+        this.n=n;
+    }
+
+    void print()
+    {
+        System.out.println(n);
+        System.out.println(name);
+    }
+}
+class sigh1
+{
+    public static void main(String args[])
+    {
+        Chitkara o = new Chitkara("mayank",12345);
+        o.print();
+    }
+}
